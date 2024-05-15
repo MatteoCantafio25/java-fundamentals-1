@@ -27,5 +27,7 @@ public class MetGala {
         } else {
             System.out.println("You are not on the list you can step away from the queue.");
         }
+
+        in.close();
     }
 }

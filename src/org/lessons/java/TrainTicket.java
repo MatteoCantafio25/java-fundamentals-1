@@ -27,12 +27,14 @@ public class TrainTicket {
             finalPrice = priceKms * underAgeDiscount / 100;
         } else if (age >= 65) {
             finalPrice = priceKms * overSixtyFiveDiscount / 100;
-        }else {
+        } else {
             finalPrice = priceKms;
         }
 
         System.out.println("Age " + age);
         System.out.println("Final Price €" + finalPrice);
+
+        in.close();
 
     }
 }
